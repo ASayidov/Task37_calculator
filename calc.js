@@ -17,13 +17,12 @@ const clear = () => {
 
 clear_btn.addEventListener("click", clear);
 
-
 const amallar = (symb) => {
-  if (input.value!=="") {
+  if (input.value!=="" && input.value.slice(-1)!==symb) {
     input.value = input.value+symb
   }
+}
 
-  }
 
 let bs = document.getElementById("bs")
 
@@ -32,14 +31,3 @@ input.value = input.value.slice(0, input.value.length-1)
   }
 
 bs.addEventListener("click", uchirish);
-
-// let str = '123//'
-
-// console.log(str.charAt(str.length-1));
-
-// if (str.charAt(str.length-1) == '/') {
-//   str.length = ""
-
-// }
-
-// console.log(str[1]);
